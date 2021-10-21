@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M07_02-2</title>
+</head>
+<body>
+    <p></p>
+    <h2>BUCLE LLETRES VOCALS I CONSONANTS</h2>
+    <p>(Ves a "Inspeccionar" > "Consola")</p>
+
+    <script>
+        // Definir nom
+        var nom= prompt("Escriu el teu nom", "Ex: Pepito Martinez");
+        var nomMin=nom.toLowerCase();
+
+        // Mostrar vocals i consonants
+        console.log("Partim del nom " + nom);
+        for (i = 0; i <nom.length; i++) { 
+
+            if (nomMin.charAt(i)=="a"||nomMin.charAt(i)=="e"||nomMin.charAt(i)=="i"||nomMin.charAt(i)=="o"||nomMin.charAt(i)=="u") {
+                    console.log(nom.charAt(i) + " és una vocal");
+            }
+
+            else if (nomMin.charAt(i)=="1"||nomMin.charAt(i)=="2"||nomMin.charAt(i)=="3"||nomMin.charAt(i)=="4"||nomMin.charAt(i)=="5"||nomMin.charAt(i)=="6"||nomMin.charAt(i)=="7"||nomMin.charAt(i)=="8"||nomMin.charAt(i)=="9"||nomMin.charAt(i)=="0")
+            {
+                console.log(nom.charAt(i) + " és un número. Els noms de persona no han de contenir números");
+            }
+
+            else if (nomMin.charAt(i)==" "){
+                console.log(nom.charAt(i) + " ");
+            }
+                     
+            else {
+                console.log(nom.charAt(i) + " és una consonant");
+            }
+        }
+    
+/* ----- Anterior amb un array amb el meu nom -----
+  var nom=["a","l","b","e","r","t","v","a","n","d","e","l","l","o","s","1"]; 
+        for (i=0;i<nom.length;i++) { 
+
+            if (nom[i]=="a"||nom[i]=="e"||nom[i]=="i"||nom[i]=="o"||nom[i]=="u"){
+                    console.log(nom[i] + " és una vocal");
+            }
+
+            else if (nom[i]==!NaN)
+            {
+                console.log(nom[i] + " és un número. Els noms de persona no han de contenir números");
+            }
+                     
+            else {
+                console.log(nom[i] + " és una consonant");
+            }
+        }         */
+
+    </script>
+</body>
+</html>

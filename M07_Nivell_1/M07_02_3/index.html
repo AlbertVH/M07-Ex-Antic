@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer_M07_02_3</title>
+</head>
+<body>
+    <p></p>
+    <h2>Comptar Lletres</h2>
+    <p>(Ves a "Inspeccionar" > "Consola")</p>
+    <script>
+        let nom=["a","l","b","e","r","t","a", "z", "o", " ", "m", "o", "l", "a", " ", "m","a", "z","o"];
+
+        function contarLetras(nom){
+			let conteo = [];
+
+			nom.map(function(letra){
+				if (conteo[letra]) {
+				conteo[letra] = conteo[letra] + 1; //Si ya existeix, sumem 1 al comptador
+				}else conteo[letra] = 1; //Si no existeix, ho inicialitzem a 1
+			});
+            console.log("Array inicial: " + nom);
+			console.log(conteo);		
+        }
+
+        contarLetras(nom);
+
+    </script>
+    
+</body>
+</html>
